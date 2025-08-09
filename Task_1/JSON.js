@@ -1,6 +1,7 @@
-const fs = require('fs').promises;
+// made it into a function to utilise async
 async function fetchData() {
   try {
+    const fs = require('fs').promises;
     const data = await fs.readFile('data.json', 'utf-8');
     const jsonData = JSON.parse(data);
     const products = jsonData.products;
@@ -25,5 +26,6 @@ async function fetchData() {
     console.error("Error loading or processing JSON:", error);
   }
 }
+
 
 fetchData();
