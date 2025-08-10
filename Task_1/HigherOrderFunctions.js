@@ -11,24 +11,17 @@ function calculateAverage(ratings) {
     let averageRating = sum/ratings.length
     return averageRating;
 }
-for (let i = 0; i < products.length;i++) {
-    if (calculateAverage(products[i].ratings) > 4) {
-        products[i].popular = true
-    }
-    else {
-        products[i].popular = false
 
-    }
-}
-let results = [];
-for (let i = 0; i < products.length;i++) {
-    console.log(`${products[i].name}: Average = ${calculateAverage(products[i].ratings)}, popular = ${products[i].popular}`)
-}
-for (let i = 0; i < products.length;i++) {
-    if (calculateAverage(products[i].ratings) > 4) {
-        results.push(products[i])
-    }
-}
+products.map((el) => {
+    el.popular = calculateAverage(el.ratings) > 4
+})
+console.log(products)
+
+let results = products.filter((el) => {
+    return calculateAverage(el.ratings) > 4
+});
+
+
 results.sort((a,b) =>{
     return calculateAverage(a.ratings) - calculateAverage(b.ratings) 
 })
@@ -37,3 +30,4 @@ for(let i = 0; i < results.length; i++) {
     finalMessage+=`"${results[i].name}", `
 }
 console.log(finalMessage.substring(0, finalMessage.length-2) + "]");
+// from fady ashraf with love
