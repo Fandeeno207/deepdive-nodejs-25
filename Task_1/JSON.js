@@ -13,7 +13,7 @@ async function fetchData() {
     const totalPrice = products.reduce((sum, p) => sum + p.price);
     console.log("Total Price of All Products:", totalPrice);
 
-    const mostExpensive = products.reduce((max, p) => p.price > max.price ? p : max, products[0]);
+    const mostExpensive = products.reduce((max, p) => p.price > max.price ? p : max);
     console.log("Most Expensive Product:", mostExpensive);
 
     console.log("Products in Stock:");
@@ -29,4 +29,5 @@ async function fetchData() {
 
 
 fetchData();
+
 
