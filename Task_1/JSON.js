@@ -10,7 +10,7 @@ async function fetchData() {
     console.log("All Product Names:");
     products.forEach(p => console.log(p.name));
 
-    const totalPrice = products.reduce((sum, p) => sum + p.price, 0);
+    const totalPrice = products.reduce((sum, p) => sum + p.price);
     console.log("Total Price of All Products:", totalPrice);
 
     const mostExpensive = products.reduce((max, p) => p.price > max.price ? p : max, products[0]);
@@ -29,3 +29,4 @@ async function fetchData() {
 
 
 fetchData();
+
