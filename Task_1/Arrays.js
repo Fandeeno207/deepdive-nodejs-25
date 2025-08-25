@@ -7,3 +7,5 @@ function getSecondLargest(nums) {
     }
     return nums[nums.length - 1]
 }
+
+getSecondLargest(new int[] {1,2,3})
