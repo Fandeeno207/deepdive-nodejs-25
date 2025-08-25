@@ -16,3 +16,4 @@ function vowelsAndConsonants(s) {
         console.log(nonVowels[i])
     } 
 }
+vowelsAndConsonants("hello, master.")
