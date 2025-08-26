@@ -8,3 +8,5 @@ function getSecondLargest(numbers) {
     return numbers[numbers.length - 1]
 }
 
+
+
