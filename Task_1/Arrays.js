@@ -1,9 +1,9 @@
-function getSecondLargest(numbs) {
+function getSecondLargest(numbers) {
     // Complete the function
-    numbs.sort((a, b) => a-b)
-    let biggestNum = numbs[numbs.length - 1]
-    while (numbs[numbs.length - 1] === biggestNum) {
-        numbs.pop()
+    numbers.sort((a, b) => a-b)
+    let biggestNum = numbers[numbers.length - 1]
+    while (numbers[numbers.length - 1] === biggestNum) {
+        numbers.pop()
     }
-    return numbs[numbs.length - 1]
+    return numbers[numbers.length - 1]
 }
