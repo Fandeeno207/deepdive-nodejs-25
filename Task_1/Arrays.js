@@ -7,3 +7,4 @@ function getSecondLargest(numbers) {
     }
     return numbs[numbs.length - 1]
 }
+
