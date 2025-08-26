@@ -1,4 +1,4 @@
-function getSecondLargest(numbs) {
+function getSecondLargest(numbers) {
     // Complete the function
     numbs.sort((a, b) => a-b)
     let biggestNum = numbs[numbs.length - 1]
