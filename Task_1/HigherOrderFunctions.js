@@ -1,7 +1,7 @@
 let products = [
-  { name: "Headphones", ratings: [4, 5, 4]},
-  { name: "Phone Case", ratings: [3, 3.5, 4] },
-  { name: "Smartwatch", ratings: [5, 4.5, 4.75]},
+  { name: "Head", ratings: [4, 5, 4]},
+  { name: "Phone", ratings: [3, 3.5, 4] },
+  { name: "Smart", ratings: [5, 4.5, 4.75]},
 ];
 function calculateAverage(ratings) {
     let sum = 0
